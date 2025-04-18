@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgrey;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    color: brown;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: royalblue;
+}
+
+#form-toggle {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+#form-toggle button {
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    margin: 0 5px;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+}
+
+#form-toggle button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.secure-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+
+    #form-toggle button {
+        margin: 5px;
+        padding: 6px 10px;
+    }
+}

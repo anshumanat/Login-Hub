@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LoginHub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>LoginHub</h1>
+        <div id="message" class="message"></div>
+
+        <div id="form-toggle">
+            <button id="show-register">Register</button>
+            <button id="show-login">Login</button>
+        </div>
+
+        <div id="form-container">
+            <form id="register-form">
+                <h2>Register</h2>
+                <input type="email" id="reg-email" placeholder="Email" required>
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+                <label><input type="checkbox" id="show-password-reg"> Show Passwords</label>
+                <button type="submit">Register</button>
+            </form>
+
+            <form id="login-form" style="display: none;">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <label><input type="checkbox" id="show-password-login"> Show Password</label>
+                <label><input type="checkbox" id="remember-me"> Remember Me</label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="secure-container" class="secure-container" style="display:none;">
+            <h2>Welcome, <span id="welcome-username"></span>!</h2>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
